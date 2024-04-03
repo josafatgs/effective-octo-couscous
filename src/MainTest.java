@@ -96,4 +96,14 @@ class MainTest {
     void testEspaciosBlancos() {
         assertEquals(1, Main.nuevaBebida(" Machiatto    ,1,   2,3 ,4 "));
     }
+
+    @Test
+    void testTamanosRepetidos() {
+        assertEquals(-1, Main.nuevaBebida(" Machiatto    ,1,   2,2 ,2 "));
+    }
+
+    @Test
+    void testNombreAcento() {
+        assertEquals(-1, Main.nuevaBebida(" Café    ,1,   2,2 ,2 "));
+    }
 }
