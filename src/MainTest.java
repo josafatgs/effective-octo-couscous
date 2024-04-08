@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void testEntredaNula() { assertEquals(-1, Main.nuevaBebida("")); }
+    void testEntredaNula() { assertEquals(-1, Main.nuevaBebida(null)); }
     @Test
     void testEntredaEnBlancoDos() { assertEquals(-1, Main.nuevaBebida("")); }
     @Test
